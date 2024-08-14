@@ -13,7 +13,8 @@ def main():
     data = {"message": "message"}
     files = {"imageFile": open("./images/sample.jpg", "rb")}
 
-    requests.post(url=url, headers=headers, data=data, files=files)
+    resp = requests.post(url=url, headers=headers, data=data, files=files)
+    print(resp.json)
 
 
 if __name__ == "__main__":
