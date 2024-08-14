@@ -18,7 +18,9 @@ pipenv install
 ## Run
 
 ```bash
+python notify.py
 ```
 
 ```bash
+bash notify.sh
 ```
