@@ -14,7 +14,7 @@ def main():
     files = {"imageFile": open("./images/sample.jpg", "rb")}
 
     resp = requests.post(url=url, headers=headers, data=data, files=files)
-    print(resp.json)
+    print(resp.json())
 
 
 if __name__ == "__main__":
